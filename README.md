@@ -23,6 +23,11 @@ featuring exercises that demonstrate:
 - Algorithm implementation
 - Problem-solving skills
 
+🛠️ Technologies
+- Java
+- IntelliJ IDEA
+- Git & GitHub
+
 👨‍💻 Author
 **Bryan**  
 Aspiring Java Developer  
