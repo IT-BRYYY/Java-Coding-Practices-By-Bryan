@@ -78,5 +78,6 @@ public class GuessBirthday{
         }
 
         System.out.println("\nYour birthday is " + day + "!!!");
+        System.out.println("Enjoy your day");
     }
 }
