@@ -16,6 +16,7 @@ public class RandomLowerCaseAndUpperCaseLetter {
             random += randomLetter;
 
         }
+        System.out.println("BRY");
         System.out.println("\n"+random);
     }
 }
