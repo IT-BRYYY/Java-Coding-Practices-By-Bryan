@@ -24,11 +24,13 @@ public class DaysOfMonthsVer2 {
             }
         }else if(month.equals("Apr") || month.equals("Jun") || month.equals("Sep") ||
         month.equals("Nov")){
+
             days = 30;
             System.out.println(month + " " + year + " has " + days + " days");
 
         }else if (month.equals("Jan") || month.equals("Mar") || month.equals("May") ||
         month.equals("Jul") || month.equals("Aug") || month.equals("Oct") || month.equals("Dec")){
+
             days = 31;
             System.out.println(month + " " + year + " has " + days + " days");
 
