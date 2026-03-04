@@ -9,13 +9,20 @@ public class RepeatAdditionQuiz {
 
         System.out.print("What is " + num1 + " + " + num2 + " ?: ");
         int answer = input.nextInt();
+        int attempts = 0;
 
         while(num1 + num2 != answer){
             System.out.print("Wrong answer. Try again. " + " What is "
             + num1 + " + " + num2 + " ?: ");
             answer = input.nextInt();
+            attempts++;
         }
-        System.out.println("You got it");
+
+        System.out.println("\nCorrect!!");
+        System.out.println("The answer is \"" + (num1 + num2) + "\"");
+        System.out.println("Attempts: " + attempts);
+
+
 
 
     }
