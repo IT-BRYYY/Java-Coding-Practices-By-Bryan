@@ -23,7 +23,7 @@ public class NumberGuessGame {
         }
 
 
-        System.out.println("Correct!1");
+        System.out.println("Correct!");
         System.out.println("The number was \"" + secretNumber + "\"");
         System.out.println("Attempts: " + attempts );
     }
