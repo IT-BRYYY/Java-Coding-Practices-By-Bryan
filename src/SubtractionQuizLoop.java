@@ -4,7 +4,7 @@ public class SubtractionQuizLoop {
         final int NUMBER_OF_QUESTION = 5;
         int correctCount = 0;
         int count = 0;
-        long startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis(); // You can use System.nanoTime(); for detailed accuracy but no need for this code
         String output = " ";
 
         Scanner input = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class SubtractionQuizLoop {
                 }
             else
                  System.out.println("Your answer is wrong.\n" + number1 + " – " + number2 + " should be " + (number1 - number2));
-                 count++;
+            count++;
 
                  output += "\n" + number1 + "–" + number2 + "=" + answer + ((number1 - number2 == answer) ? " correct": " wrong");
         }
