@@ -15,6 +15,11 @@ public class ATMMachineSimulator {
         System.out.print("Choose Transaction Type: ");
         int transactionType = input.nextInt();
 
+        if(transactionType > 3 || transactionType < 1){
+            System.out.println("Invalid Transaction Type Please Choose between 1 to 3 only.");
+            return;
+        }
+
         switch(transactionType){
             case 1:
                 System.out.print("Deposit money: ");
@@ -23,7 +28,7 @@ public class ATMMachineSimulator {
                 double balanceAfterDeposit = INITIAL_BALANCE + deposit;
 
                 if(deposit > 0){
-                    System.out.println("\nTransaction ID " + transactionID);
+                    System.out.println("\nTransaction ID: " + transactionID);
                     System.out.println("Account Holder Name: " + name);
                     System.out.println("Transaction Type: Deposit " );
                     System.out.println("Deposit Amount: " + deposit);
@@ -48,7 +53,7 @@ public class ATMMachineSimulator {
                     if(INITIAL_BALANCE >= money){
                         int numberOfBills = (int)(money / 100);
                         double balance = INITIAL_BALANCE - money;
-                        System.out.println("\nTransaction ID " + transactionID);
+                        System.out.println("\nTransaction ID: " + transactionID);
                         System.out.println("Account Holder Name: " + name);
                         System.out.println("Transaction Type: Withdraw " );
                         System.out.println("You receive " + numberOfBills + " 100- peso bills");
@@ -69,8 +74,8 @@ public class ATMMachineSimulator {
                 break;
 
             case 3:
-                System.out.println("\nTransaction ID " + transactionID);
-                System.out.println("\nAccount Holder Name: " + name);
+                System.out.println("\nTransaction ID: " + transactionID);
+                System.out.println("Account Holder Name: " + name);
                 System.out.println("Transaction Type: Check Balance " );
                 System.out.println("Balance: " + INITIAL_BALANCE);
 
