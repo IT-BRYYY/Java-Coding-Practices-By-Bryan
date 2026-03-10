@@ -1,0 +1,28 @@
+Number 1: 2
+Number 2: 3
+Number 3: 4
+Number 4: 5
+Number 5: 6
+Number 6: 7
+Number 7: 8
+Number 8: 9
+Number 9: 12
+Number 10: 23
+Number 11: 32
+Number 12: 23
+Number 13: 45
+Number 14: 67
+Number 15: 89
+Number 16: 92
+Number 17: 12
+Number 18: 34
+Number 19: 35
+Number 20: 3
+Number 21: 1
+Number 22: 2
+Number 23: 4
+=======================
+Total numbers : 23
+Total sum     : 518
+Average       : 22.52173913043478
+=======================
