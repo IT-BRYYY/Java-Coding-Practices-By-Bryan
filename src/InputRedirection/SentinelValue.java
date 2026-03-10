@@ -1,3 +1,5 @@
+package InputRedirection;
+
 import java.util.Scanner;
 
 /*
