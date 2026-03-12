@@ -1,3 +1,5 @@
+package Algorithms_Logic;
+
 public class VehiclePlateNumbers {
     public static void main(String[]args){
 

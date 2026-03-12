@@ -1,3 +1,5 @@
+package Basics;
+
 import java.util.Scanner;
 public class DaysOfMonthsVer2 {
     public static void main(String[]args){

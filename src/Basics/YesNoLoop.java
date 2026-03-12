@@ -1,3 +1,5 @@
+package Basics;
+
 import java.util.Scanner;
 public class YesNoLoop{
     public static void main(String[]args){

@@ -1,3 +1,5 @@
+package Algorithms_Logic;
+
 import java.util.Scanner;
 
 public class DescendingCountries {

@@ -1,3 +1,5 @@
+package Applications;
+
 import java.util.Scanner;
 public class PhoneKeyPads {
     public static void main(String[]args){

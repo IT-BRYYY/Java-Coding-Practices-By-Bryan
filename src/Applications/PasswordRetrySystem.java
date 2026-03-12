@@ -1,3 +1,5 @@
+package Applications;
+
 import java.util.Scanner;
 public class PasswordRetrySystem {
     public static void main(String[]args){

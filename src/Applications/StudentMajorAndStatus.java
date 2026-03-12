@@ -1,3 +1,5 @@
+package Applications;
+
 import java.util.Scanner;
 public class StudentMajorAndStatus {
     public static void main(String[] args) {

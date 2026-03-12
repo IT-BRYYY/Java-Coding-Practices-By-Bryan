@@ -1,3 +1,5 @@
+package Algorithms_Logic;
+
 import java.util.Scanner;
 public class TimeParser {
     public static void main (String[]args){

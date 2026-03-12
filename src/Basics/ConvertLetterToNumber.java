@@ -1,3 +1,5 @@
+package Basics;
+
 import java.util.Scanner;
 public class ConvertLetterToNumber {
     public static void main (String[]args){
