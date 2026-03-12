@@ -1,24 +1,37 @@
 import java.util.Scanner;
 public class PasswordRetrySystem {
-    public static void main(String[] args) {
-
-        String correctPassword = "java123";
+    public static void main(String[]args){
         Scanner input = new Scanner(System.in);
 
-        int attempts = 0;
+        String correctUser = "admin";
+        String correctPass = "ADMIN";
 
-        System.out.print("Enter password: ");
-        String password = input.nextLine();
-        attempts++;
+        System.out.print("Enter a username: ");
+        String userName = input.nextLine();
 
-        while (!password.equals(correctPassword)) {
+        System.out.print("Enter a password: ");
+        String userPass = input.nextLine();
 
-            System.out.print("Incorrect password. Try again: ");
-            password = input.nextLine();
-            attempts++;
+        while(true){
+            if(userName.equals(correctUser) && userPass.equals(correctPass)){
+                break;
+            }
+
+            else if(!userName.equals(correctUser) && !userPass.equals(correctPass)){
+                System.out.print("Both Incorrect Re-enter username: ");
+                userName = input.nextLine();
+                System.out.print("Re-enter password: ");
+                userPass = input.nextLine();
+            }else if(!userName.equals(correctUser)){
+                System.out.print("Incorrect Username Retry: ");
+                userName = input.nextLine();
+            }else{
+                System.out.print("Incorrect Password. Retry ");
+                userPass = input.nextLine();
+            }
+
         }
 
-        System.out.println("Login Successful!");
-        System.out.println("Attempts: " + attempts);
+        System.out.println("\nSuccessfully Login!!");
     }
 }

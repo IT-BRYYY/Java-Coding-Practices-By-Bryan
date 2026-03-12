@@ -1,3 +1,5 @@
+package GUI;
+
 import javax.swing.JOptionPane;
 public class Guiintro {
 
