@@ -1,20 +1,22 @@
 import java.util.Scanner;
 public class TestDoWhile{
-    public static void main(String[]args){
-
-        int data;
-        int sum = 0;
-
+    public static void main(String []args){
         Scanner input = new Scanner(System.in);
 
+        int sum = 0;
+        int number;
+        String name = "";
+
         do{
-            System.out.print("Enter an integer (the input ends if its 0:" );
-            data = input.nextInt();
-            sum += data;
+            System.out.print("Enter an integer " + " (the input ends if it is 0): ");
+            number = input.nextInt();
+            sum += number;
 
-        }while(data!=0);
+            name += "\n" + number + " + " + sum + " = " + sum;
 
-        System.out.println("The sum is " + sum);
-
+        }while(number !=0);
+        System.out.println("Total Sum " + sum);
+        System.out.println(name);
     }
+
 }

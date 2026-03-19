@@ -6,8 +6,8 @@ public class PracticingForLoop {
             System.out.println(i + " + " + j + " = " + (j + i));
         }
 
-        for(int i = 1; i <100; i++){
-            for(int q = 1; q<= 100; q++) {
+        for(int i = 1; i <100; i++) {
+            for (int q = 1; q <= 100; q++) {
                 char random = (char) ('A' + (int) (Math.random() * 26));
                 System.out.print(random);
 
