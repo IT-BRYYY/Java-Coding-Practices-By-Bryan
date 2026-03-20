@@ -9,12 +9,10 @@ public class GreatestCommonDivisor {
         int n2 = input.nextInt();
 
         int gcd = 1;
-        int k = 2;
 
-        while(k <= n1 && k <= n2){
+        for(int k= 2; k <= n1 && k <= n2; k++){
             if(n1 % k == 0 && n2 % k ==0)
                 gcd = k;
-            k++;
         }
         System.out.println("The greatest common divisor for " + n1 + " and " + n2 + " is " + gcd);
     }
