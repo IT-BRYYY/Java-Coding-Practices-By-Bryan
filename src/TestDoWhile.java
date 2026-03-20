@@ -10,12 +10,14 @@ public class TestDoWhile{
         do{
             System.out.print("Enter an integer " + " (the input ends if it is 0): ");
             number = input.nextInt();
+            int prevSum = sum;
             sum += number;
 
-            name += "\n" + number + " + " + sum + " = " + sum;
+
+            name += "\n" + prevSum + " + " + number + " = " + sum;
 
         }while(number !=0);
-        System.out.println("Total Sum " + sum);
+        System.out.println("\nTotal Sum " + sum);
         System.out.println(name);
     }
 
