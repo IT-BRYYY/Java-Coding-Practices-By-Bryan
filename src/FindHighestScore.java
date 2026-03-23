@@ -12,6 +12,8 @@ public class FindHighestScore {
         int score;
         String name;
 
+        String others = "";
+
         for(int i = students; i > 0; i--   ){
 
             System.out.print("\nEnter name: ");
@@ -24,9 +26,12 @@ public class FindHighestScore {
                 highestScore = score;
                 nameOfHighestScore = name;
             }
+
+            others += "\n" + name + " score is " + score;
         }
 
 
+        System.out.println("\nScore of all student " + others);
         System.out.println("\nThe highest score is " + nameOfHighestScore + " with the score of " + highestScore);
     }
 }
