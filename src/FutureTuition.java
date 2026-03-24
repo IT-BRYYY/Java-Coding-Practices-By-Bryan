@@ -12,7 +12,8 @@ public class FutureTuition {
         System.out.printf("Tuition after 10 years: $%.0f%n", tuition);
 
         // Sum tuition for years 11, 12, 13, 14 (4 years after year 10)
-        for (int j = 0; j < 4; j++) {
+        tuitionFourYears += tuition;
+        for (int j = 0; j < 3; j++) {
             tuition += tuition * tuitionRate;
             tuitionFourYears += tuition;
         }
