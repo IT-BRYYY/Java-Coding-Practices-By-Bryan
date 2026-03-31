@@ -13,7 +13,7 @@ public class DisplayLearYear {
                 if(count % 10 == 0){
                     System.out.println();
                 }
-            }
+            } 
 
         }
         System.out.println("\nTotal leap years: " + count);
