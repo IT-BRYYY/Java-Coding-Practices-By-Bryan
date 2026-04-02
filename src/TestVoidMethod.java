@@ -4,11 +4,16 @@ public class TestVoidMethod {
         printGrade(88.6);
 
         System.out.print("The grade is ");
-        printGrade(76.6);
+        printGrade(110.6);
 
     }
 
     public static void printGrade(double score){
+        if(score < 0 || score > 100){
+            System.out.println("Invalid Score.");
+            return;
+        }
+
         if(score >= 90){
             System.out.println('A');
         }else if(score >= 80){
