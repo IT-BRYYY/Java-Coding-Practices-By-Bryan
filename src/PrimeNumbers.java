@@ -1,6 +1,6 @@
 public class PrimeNumbers {
     public static void main(String []args){
-        System.out.println("The first 50 prime numbers are \n:");
+        System.out.println("The first 50 prime numbers are: \n");
         printPrimeNumbers(50);
     }
 
@@ -12,11 +12,11 @@ public class PrimeNumbers {
         while(count < numberOfPrimes){
             if(isPrime(number)){
                 count++;
-            }
-            if(count %  NUMBER_OF_PRIMES_PER_LINE == 0){
-                System.out.printf("%-5d\n", number);
-            }else {
-                System.out.printf("%-5d", number);
+                if(count %  NUMBER_OF_PRIMES_PER_LINE == 0){
+                    System.out.printf("%-5d\n", number);
+                }else {
+                    System.out.printf("%-5d", number);
+                }
             }
             number++;
         }
