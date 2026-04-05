@@ -1,16 +1,12 @@
-import java.util.Scanner;
-public class practice{
-    public static void main(String []args) {
+public class practice {
+    public static void main(String[] args) {
+        System.out.println("Multiplication!");
+        printMultiplication(3);
+    }
+    public static void printMultiplication(int n){
+        for(int i = 1; i <= 10; i++){
+            System.out.println(n + " x " + i + " = " + (n * i));
+        }
 
-        int i = 1;
-        do {
-            int num = 1;
-            for (int j = 1; j <= i; j++) {
-                System.out.print(num + "G");
-                num += 2;
-            }
-            System.out.println();
-            i++;
-        } while (i <= 5);
     }
 }
