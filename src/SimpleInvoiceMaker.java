@@ -86,7 +86,7 @@ public class SimpleInvoiceMaker {
         System.out.println("========================================");
         System.out.println("Customer : " + customer);
         System.out.println("----------------------------------------");
-        System.out.printf("%15s %6s %5s %10s%n","Item", "Price", "Qty", "Line Total");
+        System.out.printf("%-15s %6s %5s %10s%n","Item", "Price", "Qty", "Line Total");
         System.out.println("----------------------------------------");
         System.out.printf("%-15s %6.2f %5d %10.2f%n", item1, price1, qty1, computeLineTotal(price1, qty1));
         System.out.printf("%-15s %6.2f %5d %10.2f%n", item2, price2, qty2, computeLineTotal(price2, qty2));
