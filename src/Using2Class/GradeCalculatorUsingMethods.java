@@ -1,3 +1,5 @@
+package Using2Class;
+
 import java.util.Scanner;
 public class GradeCalculatorUsingMethods {
 

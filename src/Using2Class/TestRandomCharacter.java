@@ -1,3 +1,5 @@
+package Using2Class;
+
 public class TestRandomCharacter {
     /** Main method */
     public static void main(String[] args) {
