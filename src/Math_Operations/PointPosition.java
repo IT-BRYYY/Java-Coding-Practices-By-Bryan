@@ -1,3 +1,5 @@
+package Math_Operations;
+
 import java.util.Scanner;
 
 public class PointPosition {
