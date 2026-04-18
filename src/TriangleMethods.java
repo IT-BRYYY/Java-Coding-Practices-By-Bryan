@@ -11,7 +11,7 @@ public class TriangleMethods {
         double side3 = input.nextDouble();
 
         // Check validity
-        if (isValid(side1, side2, side3)) {
+        if ( isValid(side1, side2, side3)) {
             double result = area(side1, side2, side3);
             System.out.println("The area of the triangle is: " + result);
         } else {
