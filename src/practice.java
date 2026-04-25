@@ -1,11 +1,12 @@
+import java.util.Scanner;
 public class practice {
-    public static void main(String[] args) {
-        System.out.println("Multiplication!");
-        printMultiplication(3);
-    }
-    public static void printMultiplication(int n){
-        for(int i = 1; i <= 10; i++){
-            System.out.println(n + " x " + i + " = " + (n * i));
+    public static void main (String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double [] myList = new double[10];
+        System.out.print("Enter " + myList.length + " values");
+        for (int i = 0; i < myList.length; i++){
+            myList[i] = Math.random() * 100;
         }
 
     }
