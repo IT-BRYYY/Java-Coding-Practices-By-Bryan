@@ -2,12 +2,12 @@ import java.util.Scanner;
 public class practice {
     public static void main (String[] args) {
         Scanner input = new Scanner(System.in);
+        String [] months = {"Jan","Feb","Mar","Apr","May","Jun",
+                "Jul","Aug","Sep","Oct","Nov","Dec"};
 
-        double [] myList = new double[10];
-        System.out.print("Enter " + myList.length + " values");
-        for (int i = 0; i < myList.length; i++){
-            myList[i] = Math.random() * 100;
-        }
+        System.out.print("Enter a number ( 1 to 12 ): ");
+        int monthNumber = input.nextInt();
 
+        System.out.print("The month is " + months[monthNumber - 1]);
     }
 }
