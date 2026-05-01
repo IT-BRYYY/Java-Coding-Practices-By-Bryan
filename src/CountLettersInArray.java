@@ -26,7 +26,7 @@ public class CountLettersInArray {
             // i + 1 to avoid triggering new line at index 0
             if(((i + 1) % 20) == 0)
                 System.out.println(chars[i]);
-            else System.out.println(chars[i] + " ");
+            else System.out.print(chars[i] + " ");
         }
     }
 
