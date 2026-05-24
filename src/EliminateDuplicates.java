@@ -12,12 +12,11 @@ public class EliminateDuplicates {
             numbers[i] = input.nextInt();
         }
 
-        int[] result = eliminateDuplicates(numbers);  // ✅ Passing method is correct
+        int[] result = eliminateDuplicates(numbers);
 
         // Print the result
         System.out.print("Distinct numbers are: ");
         for (int i = 0; i < result.length; i++) {
-            if (result[i] == 0 && i != 0) break; // stop at unfilled slots
             System.out.print(result[i] + " ");
         }
     }
@@ -28,20 +27,17 @@ public class EliminateDuplicates {
 
         for (int i = 0; i < list.length; i++) {
             boolean isDuplicate = false;
-
             for (int j = 0; j < count; j++) {
                 if (list[i] == temp[j]) {
                     isDuplicate = true;
                     break;
                 }
             }
-
             if (!isDuplicate) {
-                temp[count] = list[i];
+                 temp[count] = list[i];
                 count++;
             }
         }
-
         // Copy only the unique values into a properly sized array
         int[] result = new int[count];
         for (int i = 0; i < count; i++) {
