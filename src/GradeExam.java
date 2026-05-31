@@ -10,6 +10,7 @@ public class GradeExam {
                 {'B', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
                 {'E', 'B', 'E', 'C', 'C', 'D', 'E', 'E', 'A', 'D'}};
 
+        String[] names = {"Jhin","Graves", "Vex", "Maokai", "Urgot", "Chogat", "Aatrox", "Fiora"};
         char [] keys = {'D','B','D','C','C','D','A','E','A','D'};
 
         for(int i = 0; i < answers.length; i++){
@@ -20,7 +21,7 @@ public class GradeExam {
                     correctCount++;
                 }
             }
-            System.out.println("Student " + i + "'s correct count is " + correctCount);
+            System.out.println("Student " + names[i] + "'s correct count is " + correctCount);
 
         }
     }
