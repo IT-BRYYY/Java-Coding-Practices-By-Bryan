@@ -41,4 +41,8 @@ class Circle{
     void setRadius(double newRadius){
         radius = newRadius;
     }
+
+    public double getRadius() {   // ← this is missing in your Circle class!
+        return radius;
+    }
 }
