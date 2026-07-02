@@ -1,6 +1,7 @@
 package OOP;
 
 public class PersonEmail {
+    //Person email
     private String name;
     private int age;
     private String email;
