@@ -1,10 +1,12 @@
+package Math_Operations;
+
 public class Calculator {
     /** Main method */
     public static void main(String[] args) {
         // Check number of strings passed
         if (args.length != 3) {
             System.out.println(
-                    "Usage: java Calculator operand1 operator operand2");
+                    "Usage: java Math_Operations.Calculator operand1 operator operand2");
             System.exit(1);
         }
 

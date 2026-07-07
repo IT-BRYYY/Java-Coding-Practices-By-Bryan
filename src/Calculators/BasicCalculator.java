@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BasicCalculator {
     public static void main (String [] args) {
 
-        System.out.println("Basic Calculator");
+        System.out.println("Basic Math_Operations.Calculator");
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Input a first number: ");
