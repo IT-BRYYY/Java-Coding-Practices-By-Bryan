@@ -39,7 +39,7 @@ public class Time {
     }
 
     public String toString(){
-        return String.format("%02d:%02d%02d", hour, minute, second);
+        return String.format("%02d:%02d:%02d", hour, minute, second);
     }
 
 }
