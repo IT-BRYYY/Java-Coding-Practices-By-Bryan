@@ -64,13 +64,13 @@ public class MyInteger {
 
         if(chars.length > 0 && chars[0] == '-'){
             negative = true;
+            i = 1;  // ← ADD THIS LINE to skip the '-' character
         }
         for (; i < chars.length; i++){
             if(chars[i] < '0' || chars[i] > '9'){
                 throw new NumberFormatException("Invalid character: " + chars[i]);
             }
-            result = result * 10 + chars[i] - '0';
-
+            result = result * 10 + (chars[i] - '0');
         }
         return negative ? -result : result;
     }
