@@ -6,18 +6,14 @@ public class Account {
     private double annualInterestRate ;
     private java.util.Date dateCreated;
 
-    Account(){
-        this.id = 0;
-        this.balance = 0;
-        this.annualInterestRate = 0;
-        this.dateCreated = new java.util.Date();
-
+    public Account(){
+        this(0, 0);
     }
-    Account(int id, double balance, double annualInterestRate){
+    public Account(int id, double balance){
         this.id = id;
         this.balance = balance;
-        this.annualInterestRate = annualInterestRate;
-        this.dateCreated = new java.util.Date();
+        annualInterestRate = 0;
+        dateCreated = new java.util.Date();
     }
     public java.util.Date getDateCreated(){
         return dateCreated;
