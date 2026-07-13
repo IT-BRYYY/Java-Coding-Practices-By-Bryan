@@ -2,24 +2,36 @@ package OOP;
 
 public class TestCourse {
     public static void main(String[] args) {
-        Course course1 = new Course("Data Structures");
-        Course course2 = new Course("Database Systems");
+        // Create a course
+        Course course = new Course("Introduction to Java Programming");
 
-        course1.addStudent("Peter Jones");
-        course1.addStudent("Kim Smith");
-        course1.addStudent("Anne Kennedy");
+        // Add three students
+        course.addStudent("Alice Johnson");
+        course.addStudent("Bob Smith");
+        course.addStudent("Carol Williams");
 
-        course2.addStudent("Peter Jones");
-        course2.addStudent("Steve Smith");
+        System.out.println("Initial student list:");
+        displayStudents(course);
 
-        System.out.println("Number of students in course1: "
-                + course1.getNumberOfStudents());
-        String[] students = course1.getStudents();
-        for (int i = 0; i < course1.getNumberOfStudents(); i++)
-            System.out.print(students[i] + ", ");
+        // Remove one student
+        course.dropStudent("Bob Smith");
 
-        System.out.println();
-        System.out.print("Number of students in course2: "
-                + course2.getNumberOfStudents());
+        System.out.println("\nAfter dropping Bob Smith:");
+        displayStudents(course);
+
+        // Display course information
+        System.out.println("\nCourse name: " + course.getCourseName());
+        System.out.println("Number of students: " + course.getNumberOfStudents());
+    }
+
+    private static void displayStudents(Course course) {
+        String[] students = course.getStudents();
+        if (students.length == 0) {
+            System.out.println("No students enrolled.");
+        } else {
+            for (int i = 0; i < students.length; i++) {
+                System.out.println((i + 1) + ". " + students[i]);
+            }
+        }
     }
 }
