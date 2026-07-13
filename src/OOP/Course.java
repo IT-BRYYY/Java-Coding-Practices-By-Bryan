@@ -10,12 +10,19 @@ public class Course {
     }
 
     public void addStudent(String student) {
+        if(numberOfStudents >= students.length){
+            String [] newStudents = new String[students.length * 2];
+            System.arraycopy(students, 0, newStudents, 0, students.length);
+            students = newStudents;
+        }
         students[numberOfStudents] = student;
         numberOfStudents++;
     }
 
     public String[] getStudents() {
-        return students;
+        String [] activeStudents = new String[numberOfStudents];
+        System.arraycopy(students,0, activeStudents,0, numberOfStudents);
+        return activeStudents;
     }
 
     public int getNumberOfStudents() {
@@ -27,6 +34,23 @@ public class Course {
     }
 
     public void dropStudent(String student) {
-        // Left as an exercise in Programming Exercise 10.9
+        for(int i = 0; i < numberOfStudents; i++){
+            if(students[i].equals(student)){
+                for(int j = i; j < numberOfStudents - 1; j++){
+                    students[j] = students[j + 1];
+                }
+                students[numberOfStudents - 1 ] = null;
+                numberOfStudents --;
+                return;
+            }
+        }
+        System.out.println("Students " + student + " not found in the course");
+    }
+
+    public void clear(){
+        for(int i = 0; i < numberOfStudents; i++){
+            students[i] = null;
+        }
+        numberOfStudents = 0;
     }
 }
