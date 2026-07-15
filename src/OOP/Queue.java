@@ -45,9 +45,6 @@ public class Queue {
 
         size--;
 
-        // Optional: clear the last element's reference (not necessary for int array)
-        // elements[size] = 0;
-
         return firstElement;
     }
 
@@ -73,6 +70,13 @@ public class Queue {
             throw new IllegalStateException("Queue is empty");
         }
         return elements[0];
+    }
+
+    /**
+     * Returns the current capacity of the queue
+     */
+    public int getCapacity() {
+        return elements.length;
     }
 
     /**
