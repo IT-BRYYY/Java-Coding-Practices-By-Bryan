@@ -1,7 +1,7 @@
 package OOP.inheritance;
 
 public class TestCircleRectangle {
-    public static void main (String[]args){
+    public static void main(String[] args) {
         Circle circle = new Circle(1);
         System.out.println("A circle " + circle.toString());
         System.out.println("The color is " + circle.getColor());
@@ -14,5 +14,10 @@ public class TestCircleRectangle {
         System.out.println("The area is " + rectangle.getArea());
         System.out.println("The perimeter is " + rectangle.getPerimeter());
 
+        Square square = new Square(5, "green", true);
+        System.out.println("\nA square " + square.toString());
+        System.out.println("The area is " + square.getArea());
+        System.out.println("The perimeter is " + square.getPerimeter());
+        System.out.println("The side is " + square.getSide());
     }
 }
