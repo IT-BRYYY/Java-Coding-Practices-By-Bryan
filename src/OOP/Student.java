@@ -11,6 +11,9 @@ public class Student {
         score = s;
     }
 
+    public Student() {
+    }
+
     public void showStudent(){
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
