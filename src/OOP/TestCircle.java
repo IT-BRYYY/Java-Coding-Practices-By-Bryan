@@ -45,4 +45,8 @@ class Circle{
     public double getRadius() {   // ← this is missing in your Circle class!
         return radius;
     }
+
+    public double getDiameter() {
+        return 2 * radius;
+    }
 }
