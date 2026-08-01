@@ -32,6 +32,7 @@ public class Employee extends Person {
     public void setDateHired(MyDate dataHired){
         this.dateHired = dataHired;
     }
+
     public String toString(){
         return "Employee: " + getName();
     }
