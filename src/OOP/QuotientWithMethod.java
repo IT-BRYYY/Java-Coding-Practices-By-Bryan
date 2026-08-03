@@ -10,7 +10,7 @@ public class QuotientWithMethod {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter the two integers: ");
+        System.out.print("Enter the two integers: ");
         int num1 = input.nextInt();
         int num2 = input.nextInt();
 
