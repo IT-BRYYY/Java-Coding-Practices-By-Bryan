@@ -14,7 +14,14 @@ public class QuotientWithException {
         int num1 = input.nextInt();
         int num2 = input.nextInt();
 
-        int result = quotient(num1, num2);
-        System.out.println(num1 + " / " + num2 + " is " + result);
+        try{
+            int result = quotient(num1,num2);
+                System.out.println(num1 + " / " + num2 + " is " + result);
+        }
+        catch (ArithmeticException ex){
+            System.out.println("Exception: an integer " + "cannot be divided by zero ");
+        }
+
+        System.out.println("Execution continues ...");
     }
 }
