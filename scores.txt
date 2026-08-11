@@ -1,0 +1,4 @@
+Student: john
+Score: 85
+Subject:
+Data written successfully
